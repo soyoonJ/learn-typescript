@@ -1,25 +1,55 @@
 // api url
-var url = 'https://jsonplaceholder.typicode.com/users/1';
+var url = "https://jsonplaceholder.typicode.com/users/1";
 
 // dom
-var username = document.querySelector('#username');
-var email = document.querySelector('#email');
-var address = document.querySelector('#address');
+var username = document.querySelector("#username");
+var email = document.querySelector("#email");
+var address = document.querySelector("#address");
 
 // user data
 var user = {};
 
-function startApp() {
-  axios
-    .get(url)
-    .then(function (response) {
-      console.log(response);
-      user = response.data;
-      // TODO: 이름, 이메일, 주소 표시하기
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-}
+/**
+ * @typedef {object} Address
+ * @property {string} street
+ * @property {string} city
+ */
 
-startApp();
+/**
+ * @typedef {object} User
+ * @property {string} name
+ * @property {string} email
+ * @property {Address} address
+ */
+/**
+ * @returns {Promise<User>}
+ */
+
+function fetchUser() {
+  return axios.get(url);
+}
+// console.log(fetchUser());
+
+fetchUser().then(function (response) {
+  response.address;
+});
+
+// function startApp() {
+//   // axios
+//   //   .get(url)
+//   fetchUser()
+//     .then(function (response) {
+//       // console.log(response);
+//       user = response.data;
+//       // console.log(user);
+//       // TODO: 이름, 이메일, 주소 표시하기
+//       username.innerText = user[0].name;
+//       email.innerText = user[0].email;
+//       address.innerText = user[0].address.street;
+//     })
+//     .catch(function (error) {
+//       console.log(error);
+//     });
+// }
+
+// startApp();

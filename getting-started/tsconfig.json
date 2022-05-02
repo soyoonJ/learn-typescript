@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "allowJs": true, // 자바스크립트 허용
+        "checkJs": true, // tscheck 같은 기능
+        "noImplicitAny": true, //기본타입 넣어줌
+    }
+}

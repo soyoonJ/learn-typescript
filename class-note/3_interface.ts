@@ -63,15 +63,15 @@ Object.keys(obj).forEach(function(value) {
 //     age: number;
 // }
 
-interface Developer extends Person{
-    // extends Person을 쓰면 확장이 되기 때문에 밑에 name, age는 쓸 필요가 없음
-    // name: string;
-    // age: number;
-    language: string;
-}
+// interface Developer extends Person{
+//     // extends Person을 쓰면 확장이 되기 때문에 밑에 name, age는 쓸 필요가 없음
+//     // name: string;
+//     // age: number;
+//     language: string;
+// }
 
-var captain: Developer = {
-    language: 'ts',
-    age: 100,
-    name: '캡틴'
-}
+// var captain: Developer = {
+//     language: 'ts',
+//     age: 100,
+//     name: '캡틴'
+// }

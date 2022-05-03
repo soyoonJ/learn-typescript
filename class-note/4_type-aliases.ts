@@ -3,17 +3,17 @@
 //     age: number;
 // }
 
-type Person = {
-    name: string;
-    age: number;
-}
+// type Person = {
+//     name: string;
+//     age: number;
+// }
 
 // interface를 사용했을 경우 Person에 갖다댔을 때 interface: Person이라 나옴
 // type 사용했을 때는 type 내용 전체가 나옴 (name, age 내용 다 포함)
-var seho: Person = {
-    name: '세호',
-    age: 30
-}
+// var seho: Person = {
+//     name: '세호',
+//     age: 30
+// }
 
 type MyString = string;
 var str: MyString = 'hello';

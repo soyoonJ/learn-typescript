@@ -23,10 +23,10 @@ getUser(capt);
 interface SumFunction {
     (a: number, b: number): number;
 }
-var sum: SumFunction;
-sum = function(a: number, b: number): number {
-    return a + b;
-}
+// var sum: SumFunction;
+// sum = function(a: number, b: number): number {
+//     return a + b;
+// }
 
 // 인덱싱
 interface StringArray {

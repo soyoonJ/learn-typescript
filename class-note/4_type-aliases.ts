@@ -16,7 +16,7 @@
 // }
 
 type MyString = string;
-var str: MyString = 'hello';
+// var str: MyString = 'hello';
 
 type Todo = { id: string; title: string; done: boolean};
 function getTodo(todo: Todo) {
